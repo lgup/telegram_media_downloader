@@ -402,7 +402,6 @@ async def _upload_signal_message(
         await upload_user.send_video_note(
             upload_telegram_chat_id,
             file_name,
-            caption=message.caption,
             progress=update_upload_stat,
             progress_args=(message.id, ui_file_name, time.time(), node, upload_user),
         )
